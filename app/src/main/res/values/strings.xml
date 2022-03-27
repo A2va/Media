@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+    <string name="set_data_source">Set Data Source</string>
+    <string name="prepare">Prepare</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="release">Release</string>
+</resources>
