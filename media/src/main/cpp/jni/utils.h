@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef MEDIAPLAYER_JNI_UTILS
-#define MEDIAPLAYER_JNI_UTILS
+#ifndef MEDIA_JNI_UTILS
+#define MEDIA_JNI_UTILS
 
 #include <android/log.h>
 #include <thread>

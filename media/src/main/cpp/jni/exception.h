@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef MEDIAPLAYER_EXCEPTION
-#define MEDIAPLAYER_EXCEPTION
+#ifndef MEDIA_EXCEPTION
+#define MEDIA_EXCEPTION
 
 #include <stdexcept>
 #include <exception>
