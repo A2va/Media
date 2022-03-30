@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef MEDIAPLAYER_IRENDERABLEAUDIO
-#define MEDIAPLAYER_IRENDERABLEAUDIO
+#ifndef MEDIA_IRENDERABLEAUDIO
+#define MEDIA_IRENDERABLEAUDIO
 
 class IRenderableAudio {
  public:

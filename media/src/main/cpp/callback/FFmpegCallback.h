@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef MEDIAPLAYER_FFMPEG_CALLBACK
-#define MEDIAPLAYER_FFMPEG_CALLBACK
+#ifndef MEDIA_FFMPEG_CALLBACK
+#define MEDIA_FFMPEG_CALLBACK
 
 class CompletionCallback {
  public:

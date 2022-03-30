@@ -15,8 +15,8 @@
  */
 
 
-#ifndef MEDIAPLAYER_DEFAULT_DATA_CALLBACK
-#define MEDIAPLAYER_DEFAULT_DATA_CALLBACK
+#ifndef MEDIA_DEFAULT_DATA_CALLBACK
+#define MEDIA_DEFAULT_DATA_CALLBACK
 
 #include <vector>
 #include <oboe/AudioStreamCallback.h>

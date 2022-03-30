@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef MEDIAPLAYER_FFMPEG_DECODER
-#define MEDIAPLAYER_FFMPEG_DECODER
+#ifndef MEDIA_FFMPEG_DECODER
+#define MEDIA_FFMPEG_DECODER
 
 #include <jni.h>
 #include <string>

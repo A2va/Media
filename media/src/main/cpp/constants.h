@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef MEDIAPLAYER_CONSTANTS
-#define MEDIAPLAYER_CONSTANTS
+#ifndef MEDIA_CONSTANTS
+#define MEDIA_CONSTANTS
 
 #include <stdint.h>
 
