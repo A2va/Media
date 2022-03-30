@@ -29,13 +29,17 @@ include_directories(src/main/cpp)
 add_library(media SHARED
 
         # All cpp files to compile
+
         src/main/cpp/media-player.cpp
+        src/main/cpp/MediaPlayer.cpp
+        src/main/cpp/MediaPlayer.h
 
         src/main/cpp/FFmpegDecoder.cpp
         src/main/cpp/FFmpegDecoder.h
 
-        src/main/cpp/MediaPlayer.cpp
-        src/main/cpp/MediaPlayer.h
+        src/main/cpp/stream/AudioStream.cpp
+        src/main/cpp/stream/AudioStream.h
+        src/main/cpp/stream/Stream.h
 
         src/main/cpp/utils.cpp
         src/main/cpp/utils.h

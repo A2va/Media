@@ -68,7 +68,7 @@ enum class State: int32_t { IDLE=0, END, ERROR, INITIALIZED, PREPARING, PREPARED
 
 class MediaPlayer : public CompletionCallback, ErrorCallback, oboe::AudioStreamErrorCallback, oboe::AudioStreamDataCallback {
  public:
-  MediaPlayer(jobject thiz, jobject weak_thiz);
+  	MediaPlayer(jobject thiz, jobject weak_thiz);
   	~MediaPlayer();
     /**
      * Set data source from url and headers.
@@ -256,12 +256,12 @@ class MediaPlayer : public CompletionCallback, ErrorCallback, oboe::AudioStreamE
 	int mSessionsID = oboe::SessionId::Allocate;
 	int mStreamType = oboe::kUnspecified;
 	int mOutputDevice = oboe::kUnspecified;
+	int mUsage = oboe::kUnspecified;
 
 	std::shared_ptr<oboe::AudioStream> mStream;
 	std::mutex mLock;
 
 	jclass mClass;     // Reference to MediaPlayer class
-	// TODO Rename mWeakThiz
 	jobject mWeakThiz;    // Weak Reference to MediaPlayer Java object to call on
 	jobject mThiz;		// Reference to MediaPlayer Java object
  	jmethodID mNotifyID; // Callback function to java class
