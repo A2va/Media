@@ -17,8 +17,6 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -41,6 +39,7 @@ android {
     buildFeatures {
         prefab true
     }
+    ndkVersion "25.0.8775105"
     externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
