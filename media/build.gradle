@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
     id 'maven-publish'
     id 'org.ajoberstar.grgit' version '4.1.1'
+    id 'org.tboox.gradle-xmake-plugin' version '1.1.6'
 }
 
 def lastCommitHash = ""
@@ -22,12 +23,6 @@ android {
         consumerProguardFiles "consumer-rules.pro"
 
         buildConfigField("String", "COMMIT_HASH", "\"${lastCommitHash}\"")
-
-        externalNativeBuild {
-            cmake {
-                arguments "-DANDROID_STL=c++_shared"
-            }
-        }
     }
 
     buildTypes {
@@ -42,8 +37,9 @@ android {
     }
     ndkVersion "25.0.8775105"
     externalNativeBuild {
-        cmake {
-            path "CMakeLists.txt"
+        xmake {
+            path "xmake.lua"
+            stl "c++_shared"
         }
     }
     compileOptions {
