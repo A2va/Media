@@ -11,12 +11,12 @@ if(grgit != null) {
 
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "31.0.0"
+    namespace "com.github.a2va.media"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 33
+        compileSdkVersion 31
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -38,6 +38,7 @@ android {
     }
     buildFeatures {
         prefab true
+        buildConfig true
     }
     ndkVersion "25.0.8775105"
     externalNativeBuild {
@@ -48,6 +49,13 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
     }
 }
 
@@ -66,7 +74,10 @@ afterEvaluate {
                 }*/
                 version project.hasProperty('release') ? '0.1.0' : 'latest'
 
-                from components.release
+                afterEvaluate {
+                    from components.release
+                }
+
 
                 pom {
                     name = artifactId
